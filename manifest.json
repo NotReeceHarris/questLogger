@@ -1,0 +1,61 @@
+{
+    "name": "Quest logger",
+    "short_name": "QuestLogger",
+    "start_url": "/index.html",
+    "background_color": "#b15583",
+    "theme_color": "#874164",
+    "orientation": "portrait-primary",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/src/img/icon16.png",
+            "type": "image/png",
+            "sizes": "16x16"
+        },
+        {
+            "src": "/src/img/icon20.png",
+            "type": "image/png",
+            "sizes": "20x20"
+        },
+        {
+            "src": "/src/img/icon24.png",
+            "type": "image/png",
+            "sizes": "24x24"
+        },
+        {
+            "src": "/src/img/icon32.png",
+            "type": "image/png",
+            "sizes": "32x32"
+        },
+        {
+            "src": "/src/img/icon48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "/src/img/icon64.png",
+            "type": "image/png",
+            "sizes": "64x64"
+        },
+        {
+            "src": "/src/img/icon128.png",
+            "type": "image/png",
+            "sizes": "128x128"
+        },
+        {
+            "src": "/src/img/icon144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "/src/img/icon192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "/src/img/icon256.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        }
+    ]
+}
