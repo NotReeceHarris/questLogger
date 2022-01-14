@@ -2,6 +2,7 @@ const staticCacheName = 'site-static-v1.1';
 const dynamicCacheName = 'site-dynamic-v1';
 
 const assets = [
+   '/',
    'manifest.json',
 
    '/index.html',
@@ -76,7 +77,6 @@ self.addEventListener("install",function(event){
  });
 
 
- /*
 self.addEventListener('fetch', evt => {
    evt.respondWith(
       caches.match(evt.request).then(cacheRes => {
@@ -89,4 +89,3 @@ self.addEventListener('fetch', evt => {
       }).catch(() => caches.match('/p/fallback.html'))
    );
 })
-*/

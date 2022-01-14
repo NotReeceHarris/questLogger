@@ -6,6 +6,7 @@
     "theme_color": "#874164",
     "orientation": "portrait-primary",
     "display": "standalone",
+    "description": "Track your current quests",
     "icons": [
         {
             "src": "/src/img/icon16.png",
