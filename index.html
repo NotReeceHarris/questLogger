@@ -54,7 +54,6 @@
     <!-- --->
 
     <div class="quests container grey-text text-darken-1" id="tasks">
-
     </div>
 
     <!-- --->
@@ -72,21 +71,18 @@
            <h6>New Quest</h6>
            <div class="divider"></div>
            <div class="input-field">
-              <input placeholder="e.g. Clean the dishes!" id="title" type="text" class="validate">
+              <input placeholder="e.g. Clean the dishes!" id="titleInput" type="text" class="validate">
               <label for="title">Quest Title</label>
            </div>
            <div class="input-field">
-              <input placeholder="e.g. Scrape dishes, fill sink (hot water), add soap etc." id="tasks" type="text" class="validate">
+              <input placeholder="e.g. Scrape dishes, fill sink (hot water), add soap etc." id="tasksInput" type="text" class="validate">
               <label for="tasks">Tasks</label>
            </div>
            <div class="input-field center">
-              <button class="btn-small">Add</button>
+              <button class="btn-small" id="AddTask">Add</button>
            </div>
         </form>
      </div>
-        
-
-
     
 </body>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -97,7 +93,7 @@
 
     <script>
       const firebaseConfig = {
-        apiKey: "AIzaSyCX6zUwpnhGmnReCrT8Lvi4DsnhZfact3c",
+        apiKey: "${{ secrets.FIREBASE_API_KEY }}",
         authDomain: "quest-logger.firebaseapp.com",
         projectId: "quest-logger",
         storageBucket: "quest-logger.appspot.com",
