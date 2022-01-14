@@ -7,7 +7,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <link rel="stylesheet" href="https://notreeceharris.github.io/OpenCdn/questLogger.css">
+    <link rel="stylesheet" href="/src/css/style.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
@@ -53,36 +53,8 @@
 
     <!-- --->
 
-    <div class="quests container grey-text text-darken-1">
-        <div class="card-panel quest white row">
-           <img src="/src/img/icon128.png" alt="quest thumb">
-           <div class="quest-details">
-              <div class="quest-title">Quest #</div>
-              <div class="quest-tasks">Step 1, Step 2, Step 3</div>
-           </div>
-           <div class="quest-delete">
-              <i class="material-icons">delete_outline</i>
-           </div>
-        </div>
-        <div class="card-panel quest white row">
-           <img src="/src/img/icon128.png" alt="quest thumb">
-           <div class="quest-details">
-              <div class="quest-title">Quest #</div>
-              <div class="quest-tasks">Step 1, Step 2, Step 3</div>
-           </div>
-           <div class="quest-delete">
-              <i class="material-icons">delete_outline</i>
-           </div>
-        </div>
-        <div class="card-panel quest white row">
-        <img src="/src/img/icon128.png" alt="quest thumb">
-        <div class="quest-details">
-           <div class="quest-title">Quest #</div>
-           <div class="quest-tasks">Step 1, Step 2, Step 3</div>
-        </div>
-        <div class="quest-delete">
-           <i class="material-icons">delete_outline</i>
-        </div>
+    <div class="quests container grey-text text-darken-1" id="tasks">
+
     </div>
 
     <!-- --->
@@ -117,10 +89,31 @@
 
     
 </body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script>
+      const firebaseConfig = {
+        apiKey: "AIzaSyCX6zUwpnhGmnReCrT8Lvi4DsnhZfact3c",
+        authDomain: "quest-logger.firebaseapp.com",
+        projectId: "quest-logger",
+        storageBucket: "quest-logger.appspot.com",
+        messagingSenderId: "556655740985",
+        appId: "1:556655740985:web:ff2c7c49c22e744d36e5e8",
+        measurementId: "G-BR7SVLCDT9"
+      };
     
-    <script src="/src/js/app.js"></script>
-    <script src="/src/js/install.js"></script>
-    <script src="/src/js/ui.js"></script>
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+
+   <script src="/src/js/db.js"></script>
+   <script src="/src/js/app.js"></script>
+   <script src="/src/js/install.js"></script>
+   <script src="/src/js/ui.js"></script>
+
 </html>
